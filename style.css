@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap');
+body {
+    background-color:  hsl(210, 46%, 95%);
+    color:hsl(217, 19%, 35%);
+    font-family: "Manrope", sans-serif;
+}
+img {
+    width: 50px;
+    border-radius: 50%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+*{
+    margin: 0;
+    box-shadow: border-box;
+    font-family: sans-serif !important;
+
+}
+.card{
+    display: flex;
+    /*width: ;*/
+    border-radius: 10px;
+    width: 700px;
+    background-color: white;
+}
+
+img{
+    width: 50px;
+}
+
+.left{
+    width:  40px;
+    height: 250px;
+    background: url("images/drawers.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-position: center;
+}
+
+.right {
+    width: 60%;
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.main-content{
+    margin-bottom: 20px;
+}
+
+.image-container{
+    display: flex;
+    /*justify-contennt: ; */
+    margin-bottom: 10px;
+    align-items: center;
+}
+h3{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.text-container {
+    margin-left: 10px;
+}
+h4{
+    margin-bottom: 5px;
+}
+@media (max-width:768px)  {
+    .card{
+        width: 100%;
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        border-bottom-left-radius:0px ;
+        border-top-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .right{
+        width: 100%;
+    }
+    .main-content{
+        width: 90%;
+    }
+}
